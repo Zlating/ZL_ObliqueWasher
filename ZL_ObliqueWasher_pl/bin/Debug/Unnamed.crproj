@@ -1,0 +1,9 @@
+<project outputDir="C:\Users\arnkey\YandexDisk\Programming_Tekla\ArkLib\bin\Debug\Confused" baseDir="C:\Users\arnkey\YandexDisk\Programming_Tekla\ArkLib\bin\Debug" xmlns="http://confuser.codeplex.com">
+  <module path="ArkLib.dll">
+    <rule pattern="true" preset="maximum" inherit="false">
+      <protection id="anti ildasm" />
+    </rule>
+  </module>
+  <probePath>C:\Users\arnkey\YandexDisk\Programming_Tekla\ArkLib\bin\Debug</probePath>
+  <plugin>C:\Users\arnkey\YandexDisk\Programming_Tekla\ArkLib\bin\Debug\clipper_library.dll</plugin>
+</project>

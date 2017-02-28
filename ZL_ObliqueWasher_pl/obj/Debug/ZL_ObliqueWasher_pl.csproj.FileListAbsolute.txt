@@ -1,0 +1,8 @@
+C:\Users\arnkey\YandexDisk\Programming_Tekla\ZL_ObliqueWasher_pl\ZL_ObliqueWasher_pl\bin\Debug\ZL_ObliqueWasher_pl.dll
+C:\Users\arnkey\YandexDisk\Programming_Tekla\ZL_ObliqueWasher_pl\ZL_ObliqueWasher_pl\bin\Debug\ZL_ObliqueWasher_pl.pdb
+C:\Users\arnkey\YandexDisk\Programming_Tekla\ZL_ObliqueWasher_pl\ZL_ObliqueWasher_pl\bin\Debug\Newtonsoft.Json.dll
+C:\Users\arnkey\YandexDisk\Programming_Tekla\ZL_ObliqueWasher_pl\ZL_ObliqueWasher_pl\obj\Debug\ZL_ObliqueWasher_pl.MainForm.resources
+C:\Users\arnkey\YandexDisk\Programming_Tekla\ZL_ObliqueWasher_pl\ZL_ObliqueWasher_pl\obj\Debug\ZL_ObliqueWasher_pl.csproj.GenerateResource.Cache
+C:\Users\arnkey\YandexDisk\Programming_Tekla\ZL_ObliqueWasher_pl\ZL_ObliqueWasher_pl\obj\Debug\ZL_ObliqueWasher_pl.dll
+C:\Users\arnkey\YandexDisk\Programming_Tekla\ZL_ObliqueWasher_pl\ZL_ObliqueWasher_pl\obj\Debug\ZL_ObliqueWasher_pl.pdb
+C:\Users\arnkey\YandexDisk\Programming_Tekla\ZL_ObliqueWasher_pl\ZL_ObliqueWasher_pl\obj\Debug\ZL_ObliqueWasher_pl.csprojResolveAssemblyReference.cache
