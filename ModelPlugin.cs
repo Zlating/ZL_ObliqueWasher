@@ -45,11 +45,11 @@ namespace ZL_ObliqueWasher_pl
         private Model _Model;
         private PluginData _Data;
 
-        private string name = "Шайба";
+        private string name = "ГГ Г©ГЎГ ";
         private string material = "STEEL";
         private string finish = "";
         private string prefix_part = "";
-        private string prefix_asm = "МД";
+        private string prefix_asm = "ГЊГ„";
         private int start_part = 1;
         private int start_asm = 1;
 
@@ -116,7 +116,7 @@ namespace ZL_ObliqueWasher_pl
                             parts.Add(p);
                         }
 
-                        #region Чистим дубликаты
+                        #region Delete duplicate
                         List<Part> _part = new List<Part>();
 
                         foreach (Part p in parts)
@@ -151,7 +151,7 @@ namespace ZL_ObliqueWasher_pl
 
                                     Point _pb = new Point(pb);
 
-                                    #region Уклон полок - точки через солид
+                                    #region Г“ГЄГ«Г®Г­ ГЇГ®Г«Г®ГЄ - ГІГ®Г·ГЄГЁ Г·ГҐГ°ГҐГ§ Г±Г®Г«ГЁГ¤
 
                                     GeometricPlane gp = new GeometricPlane(
                                         _pb,
@@ -194,7 +194,7 @@ namespace ZL_ObliqueWasher_pl
 
                                     #endregion
 
-                                    #region Точки для построения пластины
+                                    #region Г’Г®Г·ГЄГЁ Г¤Г«Гї ГЇГ®Г±ГІГ°Г®ГҐГ­ГЁГї ГЇГ«Г Г±ГІГЁГ­Г»
 
                                     double diam = bg.BoltSize;
 
@@ -348,13 +348,13 @@ namespace ZL_ObliqueWasher_pl
             if (!IsDefaultValue(Data.start_part)) start_part = Data.start_part;
         }
 
-        #region Пересечение солида геометрической плоскостью
+        #region ГЏГҐГ°ГҐГ±ГҐГ·ГҐГ­ГЁГҐ Г±Г®Г«ГЁГ¤Г  ГЈГҐГ®Г¬ГҐГІГ°ГЁГ·ГҐГ±ГЄГ®Г© ГЇГ«Г®Г±ГЄГ®Г±ГІГјГѕ
         /// <summary>
-        /// Пересечение солида геометрической плоскостью
+        /// ГЏГҐГ°ГҐГ±ГҐГ·ГҐГ­ГЁГҐ Г±Г®Г«ГЁГ¤Г  ГЈГҐГ®Г¬ГҐГІГ°ГЁГ·ГҐГ±ГЄГ®Г© ГЇГ«Г®Г±ГЄГ®Г±ГІГјГѕ
         /// </summary>
-        /// <param name="solid">Солид</param>
-        /// <param name="plane">Геометрическая плоскость</param>
-        /// <returns>Коллекция полигонов(коллекций точек)</returns>
+        /// <param name="solid">Г‘Г®Г«ГЁГ¤</param>
+        /// <param name="plane">ГѓГҐГ®Г¬ГҐГІГ°ГЁГ·ГҐГ±ГЄГ Гї ГЇГ«Г®Г±ГЄГ®Г±ГІГј</param>
+        /// <returns>ГЉГ®Г«Г«ГҐГЄГ¶ГЁГї ГЇГ®Г«ГЁГЈГ®Г­Г®Гў(ГЄГ®Г«Г«ГҐГЄГ¶ГЁГ© ГІГ®Г·ГҐГЄ)</returns>
         List<List<Point>> IntersectSolid(Solid solid, GeometricPlane plane)
         {
 
