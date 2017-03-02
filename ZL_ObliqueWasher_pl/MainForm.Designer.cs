@@ -33,23 +33,27 @@ namespace ZL_ObliqueWasher_pl
             this.OkApplyModifyGetOnOffCancel = new Tekla.Structures.Dialog.UIControls.OkApplyModifyGetOnOffCancel();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.ParametersTabPage = new System.Windows.Forms.TabPage();
-            this.saveLoad = new Tekla.Structures.Dialog.UIControls.SaveLoad();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.materialCatalog1 = new Tekla.Structures.Dialog.UIControls.MaterialCatalog();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.materialCatalog1 = new Tekla.Structures.Dialog.UIControls.MaterialCatalog();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.saveLoad = new Tekla.Structures.Dialog.UIControls.SaveLoad();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.ParametersTabPage.SuspendLayout();
@@ -73,7 +77,7 @@ namespace ZL_ObliqueWasher_pl
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel.Size = new System.Drawing.Size(534, 291);
+            this.tableLayoutPanel.Size = new System.Drawing.Size(534, 337);
             this.tableLayoutPanel.TabIndex = 0;
             // 
             // OkApplyModifyGetOnOffCancel
@@ -82,7 +86,7 @@ namespace ZL_ObliqueWasher_pl
             this.structuresExtender.SetAttributeTypeName(this.OkApplyModifyGetOnOffCancel, null);
             this.structuresExtender.SetBindPropertyName(this.OkApplyModifyGetOnOffCancel, null);
             this.OkApplyModifyGetOnOffCancel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.OkApplyModifyGetOnOffCancel.Location = new System.Drawing.Point(3, 259);
+            this.OkApplyModifyGetOnOffCancel.Location = new System.Drawing.Point(3, 305);
             this.OkApplyModifyGetOnOffCancel.Name = "OkApplyModifyGetOnOffCancel";
             this.OkApplyModifyGetOnOffCancel.Size = new System.Drawing.Size(528, 29);
             this.OkApplyModifyGetOnOffCancel.TabIndex = 19;
@@ -103,7 +107,7 @@ namespace ZL_ObliqueWasher_pl
             this.tabControl.Location = new System.Drawing.Point(3, 52);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(528, 201);
+            this.tabControl.Size = new System.Drawing.Size(528, 247);
             this.tabControl.TabIndex = 18;
             // 
             // ParametersTabPage
@@ -111,6 +115,10 @@ namespace ZL_ObliqueWasher_pl
             this.structuresExtender.SetAttributeName(this.ParametersTabPage, null);
             this.structuresExtender.SetAttributeTypeName(this.ParametersTabPage, null);
             this.structuresExtender.SetBindPropertyName(this.ParametersTabPage, null);
+            this.ParametersTabPage.Controls.Add(this.textBox9);
+            this.ParametersTabPage.Controls.Add(this.checkBox9);
+            this.ParametersTabPage.Controls.Add(this.textBox8);
+            this.ParametersTabPage.Controls.Add(this.checkBox8);
             this.ParametersTabPage.Controls.Add(this.textBox7);
             this.ParametersTabPage.Controls.Add(this.checkBox7);
             this.ParametersTabPage.Controls.Add(this.textBox6);
@@ -122,27 +130,97 @@ namespace ZL_ObliqueWasher_pl
             this.ParametersTabPage.Location = new System.Drawing.Point(4, 22);
             this.ParametersTabPage.Name = "ParametersTabPage";
             this.ParametersTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.ParametersTabPage.Size = new System.Drawing.Size(520, 175);
+            this.ParametersTabPage.Size = new System.Drawing.Size(520, 221);
             this.ParametersTabPage.TabIndex = 2;
             this.ParametersTabPage.Text = "albl_Parameters";
             this.ParametersTabPage.UseVisualStyleBackColor = true;
             // 
-            // saveLoad
+            // textBox7
             // 
-            this.structuresExtender.SetAttributeName(this.saveLoad, null);
-            this.structuresExtender.SetAttributeTypeName(this.saveLoad, null);
-            this.saveLoad.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.structuresExtender.SetBindPropertyName(this.saveLoad, null);
-            this.saveLoad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.saveLoad.HelpFileType = Tekla.Structures.Dialog.UIControls.SaveLoad.HelpFileTypeEnum.General;
-            this.saveLoad.HelpKeyword = "";
-            this.saveLoad.HelpUrl = "";
-            this.saveLoad.Location = new System.Drawing.Point(3, 3);
-            this.saveLoad.Name = "saveLoad";
-            this.saveLoad.SaveAsText = "";
-            this.saveLoad.Size = new System.Drawing.Size(528, 43);
-            this.saveLoad.TabIndex = 0;
-            this.saveLoad.UserDefinedHelpFilePath = null;
+            this.structuresExtender.SetAttributeName(this.textBox7, "finish");
+            this.structuresExtender.SetAttributeTypeName(this.textBox7, "String");
+            this.structuresExtender.SetBindPropertyName(this.textBox7, null);
+            this.textBox7.Location = new System.Drawing.Point(131, 141);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 7;
+            // 
+            // checkBox7
+            // 
+            this.structuresExtender.SetAttributeName(this.checkBox7, "finish");
+            this.structuresExtender.SetAttributeTypeName(this.checkBox7, null);
+            this.checkBox7.AutoSize = true;
+            this.structuresExtender.SetBindPropertyName(this.checkBox7, null);
+            this.structuresExtender.SetIsFilter(this.checkBox7, true);
+            this.checkBox7.Location = new System.Drawing.Point(12, 143);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(53, 17);
+            this.checkBox7.TabIndex = 6;
+            this.checkBox7.Text = "Finish";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // textBox6
+            // 
+            this.structuresExtender.SetAttributeName(this.textBox6, "name");
+            this.structuresExtender.SetAttributeTypeName(this.textBox6, "String");
+            this.structuresExtender.SetBindPropertyName(this.textBox6, null);
+            this.textBox6.Location = new System.Drawing.Point(131, 92);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 5;
+            // 
+            // checkBox6
+            // 
+            this.structuresExtender.SetAttributeName(this.checkBox6, "name");
+            this.structuresExtender.SetAttributeTypeName(this.checkBox6, null);
+            this.checkBox6.AutoSize = true;
+            this.structuresExtender.SetBindPropertyName(this.checkBox6, null);
+            this.structuresExtender.SetIsFilter(this.checkBox6, true);
+            this.checkBox6.Location = new System.Drawing.Point(12, 94);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(54, 17);
+            this.checkBox6.TabIndex = 4;
+            this.checkBox6.Text = "Name";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // materialCatalog1
+            // 
+            this.structuresExtender.SetAttributeName(this.materialCatalog1, null);
+            this.structuresExtender.SetAttributeTypeName(this.materialCatalog1, null);
+            this.materialCatalog1.BackColor = System.Drawing.Color.Transparent;
+            this.structuresExtender.SetBindPropertyName(this.materialCatalog1, null);
+            this.materialCatalog1.Location = new System.Drawing.Point(237, 108);
+            this.materialCatalog1.Name = "materialCatalog1";
+            this.materialCatalog1.SelectedMaterial = "";
+            this.materialCatalog1.Size = new System.Drawing.Size(88, 27);
+            this.materialCatalog1.TabIndex = 3;
+            this.materialCatalog1.SelectClicked += new System.EventHandler(this.materialCatalog1_SelectClicked);
+            this.materialCatalog1.SelectionDone += new System.EventHandler(this.materialCatalog1_SelectionDone);
+            this.materialCatalog1.Load += new System.EventHandler(this.materialCatalog1_Load);
+            // 
+            // textBox5
+            // 
+            this.structuresExtender.SetAttributeName(this.textBox5, "material");
+            this.structuresExtender.SetAttributeTypeName(this.textBox5, "String");
+            this.structuresExtender.SetBindPropertyName(this.textBox5, null);
+            this.textBox5.Location = new System.Drawing.Point(131, 115);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 2;
+            // 
+            // checkBox5
+            // 
+            this.structuresExtender.SetAttributeName(this.checkBox5, "material");
+            this.structuresExtender.SetAttributeTypeName(this.checkBox5, null);
+            this.checkBox5.AutoSize = true;
+            this.structuresExtender.SetBindPropertyName(this.checkBox5, null);
+            this.structuresExtender.SetIsFilter(this.checkBox5, true);
+            this.checkBox5.Location = new System.Drawing.Point(12, 117);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(63, 17);
+            this.checkBox5.TabIndex = 1;
+            this.checkBox5.Text = "Material";
+            this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -162,55 +240,7 @@ namespace ZL_ObliqueWasher_pl
             this.groupBox1.Size = new System.Drawing.Size(468, 79);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Свойства нумерации";
-            // 
-            // textBox1
-            // 
-            this.structuresExtender.SetAttributeName(this.textBox1, "prefix_part");
-            this.structuresExtender.SetAttributeTypeName(this.textBox1, "String");
-            this.structuresExtender.SetBindPropertyName(this.textBox1, null);
-            this.textBox1.Location = new System.Drawing.Point(125, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
-            // 
-            // checkBox1
-            // 
-            this.structuresExtender.SetAttributeName(this.checkBox1, "prefix_part");
-            this.structuresExtender.SetAttributeTypeName(this.checkBox1, null);
-            this.checkBox1.AutoSize = true;
-            this.structuresExtender.SetBindPropertyName(this.checkBox1, null);
-            this.structuresExtender.SetIsFilter(this.checkBox1, true);
-            this.checkBox1.Location = new System.Drawing.Point(6, 19);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(113, 17);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "Префикс Детали";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.structuresExtender.SetAttributeName(this.checkBox2, "prefix_asm");
-            this.structuresExtender.SetAttributeTypeName(this.checkBox2, null);
-            this.checkBox2.AutoSize = true;
-            this.structuresExtender.SetBindPropertyName(this.checkBox2, null);
-            this.structuresExtender.SetIsFilter(this.checkBox2, true);
-            this.checkBox2.Location = new System.Drawing.Point(6, 45);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(112, 17);
-            this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = "Префикс Сборки";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            this.structuresExtender.SetAttributeName(this.textBox2, "prefix_asm");
-            this.structuresExtender.SetAttributeTypeName(this.textBox2, "String");
-            this.structuresExtender.SetBindPropertyName(this.textBox2, null);
-            this.textBox2.Location = new System.Drawing.Point(125, 43);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
+            this.groupBox1.Text = "Numeration";
             // 
             // checkBox3
             // 
@@ -221,9 +251,9 @@ namespace ZL_ObliqueWasher_pl
             this.structuresExtender.SetIsFilter(this.checkBox3, true);
             this.checkBox3.Location = new System.Drawing.Point(235, 45);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(118, 17);
+            this.checkBox3.Size = new System.Drawing.Size(86, 17);
             this.checkBox3.TabIndex = 7;
-            this.checkBox3.Text = "Начальный номер";
+            this.checkBox3.Text = "Start number";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // textBox3
@@ -245,9 +275,9 @@ namespace ZL_ObliqueWasher_pl
             this.structuresExtender.SetIsFilter(this.checkBox4, true);
             this.checkBox4.Location = new System.Drawing.Point(235, 19);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(118, 17);
+            this.checkBox4.Size = new System.Drawing.Size(86, 17);
             this.checkBox4.TabIndex = 5;
-            this.checkBox4.Text = "Начальный номер";
+            this.checkBox4.Text = "Start number";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // textBox4
@@ -260,92 +290,118 @@ namespace ZL_ObliqueWasher_pl
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 4;
             // 
-            // checkBox5
+            // checkBox2
             // 
-            this.structuresExtender.SetAttributeName(this.checkBox5, "material");
-            this.structuresExtender.SetAttributeTypeName(this.checkBox5, null);
-            this.checkBox5.AutoSize = true;
-            this.structuresExtender.SetBindPropertyName(this.checkBox5, null);
-            this.structuresExtender.SetIsFilter(this.checkBox5, true);
-            this.checkBox5.Location = new System.Drawing.Point(12, 117);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(76, 17);
-            this.checkBox5.TabIndex = 1;
-            this.checkBox5.Text = "Материал";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.structuresExtender.SetAttributeName(this.checkBox2, "prefix_asm");
+            this.structuresExtender.SetAttributeTypeName(this.checkBox2, null);
+            this.checkBox2.AutoSize = true;
+            this.structuresExtender.SetBindPropertyName(this.checkBox2, null);
+            this.structuresExtender.SetIsFilter(this.checkBox2, true);
+            this.checkBox2.Location = new System.Drawing.Point(6, 45);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(98, 17);
+            this.checkBox2.TabIndex = 3;
+            this.checkBox2.Text = "Prefix assembly";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // textBox2
             // 
-            this.structuresExtender.SetAttributeName(this.textBox5, "material");
-            this.structuresExtender.SetAttributeTypeName(this.textBox5, "String");
-            this.structuresExtender.SetBindPropertyName(this.textBox5, null);
-            this.textBox5.Location = new System.Drawing.Point(131, 115);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 2;
+            this.structuresExtender.SetAttributeName(this.textBox2, "prefix_asm");
+            this.structuresExtender.SetAttributeTypeName(this.textBox2, "String");
+            this.structuresExtender.SetBindPropertyName(this.textBox2, null);
+            this.textBox2.Location = new System.Drawing.Point(125, 43);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 2;
             // 
-            // materialCatalog1
+            // checkBox1
             // 
-            this.structuresExtender.SetAttributeName(this.materialCatalog1, null);
-            this.structuresExtender.SetAttributeTypeName(this.materialCatalog1, null);
-            this.materialCatalog1.BackColor = System.Drawing.Color.Transparent;
-            this.structuresExtender.SetBindPropertyName(this.materialCatalog1, null);
-            this.materialCatalog1.Location = new System.Drawing.Point(237, 108);
-            this.materialCatalog1.Name = "materialCatalog1";
-            this.materialCatalog1.SelectedMaterial = "";
-            this.materialCatalog1.Size = new System.Drawing.Size(88, 27);
-            this.materialCatalog1.TabIndex = 3;
-            this.materialCatalog1.SelectClicked += new System.EventHandler(this.materialCatalog1_SelectClicked);
-            this.materialCatalog1.SelectionDone += new System.EventHandler(this.materialCatalog1_SelectionDone);
-            this.materialCatalog1.Load += new System.EventHandler(this.materialCatalog1_Load);
+            this.structuresExtender.SetAttributeName(this.checkBox1, "prefix_part");
+            this.structuresExtender.SetAttributeTypeName(this.checkBox1, null);
+            this.checkBox1.AutoSize = true;
+            this.structuresExtender.SetBindPropertyName(this.checkBox1, null);
+            this.structuresExtender.SetIsFilter(this.checkBox1, true);
+            this.checkBox1.Location = new System.Drawing.Point(6, 19);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(73, 17);
+            this.checkBox1.TabIndex = 1;
+            this.checkBox1.Text = "Prefix part";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // textBox6
+            // textBox1
             // 
-            this.structuresExtender.SetAttributeName(this.textBox6, "name");
-            this.structuresExtender.SetAttributeTypeName(this.textBox6, "String");
-            this.structuresExtender.SetBindPropertyName(this.textBox6, null);
-            this.textBox6.Location = new System.Drawing.Point(131, 92);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 5;
+            this.structuresExtender.SetAttributeName(this.textBox1, "prefix_part");
+            this.structuresExtender.SetAttributeTypeName(this.textBox1, "String");
+            this.structuresExtender.SetBindPropertyName(this.textBox1, null);
+            this.textBox1.Location = new System.Drawing.Point(125, 17);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 0;
             // 
-            // checkBox6
+            // saveLoad
             // 
-            this.structuresExtender.SetAttributeName(this.checkBox6, "name");
-            this.structuresExtender.SetAttributeTypeName(this.checkBox6, null);
-            this.checkBox6.AutoSize = true;
-            this.structuresExtender.SetBindPropertyName(this.checkBox6, null);
-            this.structuresExtender.SetIsFilter(this.checkBox6, true);
-            this.checkBox6.Location = new System.Drawing.Point(12, 94);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(86, 17);
-            this.checkBox6.TabIndex = 4;
-            this.checkBox6.Text = "Имя детали";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.structuresExtender.SetAttributeName(this.saveLoad, null);
+            this.structuresExtender.SetAttributeTypeName(this.saveLoad, null);
+            this.saveLoad.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.structuresExtender.SetBindPropertyName(this.saveLoad, null);
+            this.saveLoad.Dock = System.Windows.Forms.DockStyle.Top;
+            this.saveLoad.HelpFileType = Tekla.Structures.Dialog.UIControls.SaveLoad.HelpFileTypeEnum.General;
+            this.saveLoad.HelpKeyword = "";
+            this.saveLoad.HelpUrl = "";
+            this.saveLoad.Location = new System.Drawing.Point(3, 3);
+            this.saveLoad.Name = "saveLoad";
+            this.saveLoad.SaveAsText = "";
+            this.saveLoad.Size = new System.Drawing.Size(528, 43);
+            this.saveLoad.TabIndex = 0;
+            this.saveLoad.UserDefinedHelpFilePath = null;
             // 
-            // textBox7
+            // checkBox8
             // 
-            this.structuresExtender.SetAttributeName(this.textBox7, "finish");
-            this.structuresExtender.SetAttributeTypeName(this.textBox7, "String");
-            this.structuresExtender.SetBindPropertyName(this.textBox7, null);
-            this.textBox7.Location = new System.Drawing.Point(131, 141);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 7;
+            this.structuresExtender.SetAttributeName(this.checkBox8, "weight");
+            this.structuresExtender.SetAttributeTypeName(this.checkBox8, null);
+            this.checkBox8.AutoSize = true;
+            this.structuresExtender.SetBindPropertyName(this.checkBox8, null);
+            this.structuresExtender.SetIsFilter(this.checkBox8, true);
+            this.checkBox8.Location = new System.Drawing.Point(12, 182);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(60, 17);
+            this.checkBox8.TabIndex = 8;
+            this.checkBox8.Text = "Weight";
+            this.checkBox8.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // textBox8
             // 
-            this.structuresExtender.SetAttributeName(this.checkBox7, "finish");
-            this.structuresExtender.SetAttributeTypeName(this.checkBox7, null);
-            this.checkBox7.AutoSize = true;
-            this.structuresExtender.SetBindPropertyName(this.checkBox7, null);
-            this.structuresExtender.SetIsFilter(this.checkBox7, true);
-            this.checkBox7.Location = new System.Drawing.Point(12, 143);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(81, 17);
-            this.checkBox7.TabIndex = 6;
-            this.checkBox7.Text = "Обработка";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.structuresExtender.SetAttributeName(this.textBox8, "weight");
+            this.structuresExtender.SetAttributeTypeName(this.textBox8, "Double");
+            this.structuresExtender.SetBindPropertyName(this.textBox8, null);
+            this.textBox8.Location = new System.Drawing.Point(131, 180);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.TabIndex = 9;
+            // 
+            // textBox9
+            // 
+            this.structuresExtender.SetAttributeName(this.textBox9, "us_prop_weight");
+            this.structuresExtender.SetAttributeTypeName(this.textBox9, "String");
+            this.structuresExtender.SetBindPropertyName(this.textBox9, null);
+            this.textBox9.Location = new System.Drawing.Point(360, 179);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.TabIndex = 11;
+            // 
+            // checkBox9
+            // 
+            this.structuresExtender.SetAttributeName(this.checkBox9, "us_prop_weight");
+            this.structuresExtender.SetAttributeTypeName(this.checkBox9, null);
+            this.checkBox9.AutoSize = true;
+            this.structuresExtender.SetBindPropertyName(this.checkBox9, null);
+            this.structuresExtender.SetIsFilter(this.checkBox9, true);
+            this.checkBox9.Location = new System.Drawing.Point(241, 181);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.Size = new System.Drawing.Size(60, 17);
+            this.checkBox9.TabIndex = 10;
+            this.checkBox9.Text = "Weight";
+            this.checkBox9.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -354,7 +410,7 @@ namespace ZL_ObliqueWasher_pl
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.structuresExtender.SetBindPropertyName(this, null);
-            this.ClientSize = new System.Drawing.Size(534, 291);
+            this.ClientSize = new System.Drawing.Size(534, 337);
             this.Controls.Add(this.tableLayoutPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
@@ -392,5 +448,9 @@ namespace ZL_ObliqueWasher_pl
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.CheckBox checkBox9;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.CheckBox checkBox8;
     }
 }
